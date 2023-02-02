@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav class="navigation">
+            <a href="#" class="navigation__logo">
+                <svg width="37" height="37" class="navigation__icon">
+                    <use href="./img/icons.svg#icon-setting"></use>
+                </svg>
+                <span class="navigation__logo--title">Dashboard<span>v.01</span>
+                </span>
+            </a>
+
+            <ul class="navigation__list">
+                <li class="navigation__item">
+                    <button class="navigation__button">
+                        <svg width="24" height="24" class="navigation__icon--key">
+                            <use href="./img/icons.svg#icon-key"></use>
+                        </svg>
+                        Dashboard
+                    </button>
+                </li>
+                <li class="navigation__item">
+                    <button class="navigation__button">
+                        <svg width="24" height="24" class="navigation__icon">
+                            <use href="./img/icons.svg#icon-square"></use>
+                        </svg>
+                        Product
+                        <svg width="16" height="16" class="navigation__arrow">
+                            <use href="./img/icons.svg#icon-arrow-right"></use>
+                        </svg>
+                    </button>
+                </li>
+                <li class="navigation__item">
+                    <button class="navigation__button" autofocus>
+                        <svg width="24" height="24" class="navigation__icon--user">
+                            <use href="./img/icons.svg#icon-user"></use>
+                        </svg>
+                        Customers
+                        <svg width="16" height="16" class="navigation__arrow">
+                            <use href="./img/icons.svg#icon-arrow-right"></use>
+                        </svg>
+                    </button>
+                </li>
+                <li class="navigation__item">
+                    <button class="navigation__button">
+                        <svg width="24" height="24" class="navigation__icon--discount">
+                            <use href="./img/icons.svg#icon-wallet"></use>
+                        </svg>
+                        Income
+                        <svg width="16" height="16" class="navigation__arrow">
+                            <use href="./img/icons.svg#icon-arrow-right"></use>
+                        </svg>
+                    </button>
+                </li>
+                <li class="navigation__item">
+                    <button class="navigation__button">
+                        <svg width="24" height="24" class="navigation__icon">
+                            <use href="./img/icons.svg#icon-discount"></use>
+                        </svg>
+                        Promote
+                        <svg width="16" height="16" class="navigation__arrow">
+                            <use href="./img/icons.svg#icon-arrow-right"></use>
+                        </svg>
+                    </button>
+                </li>
+                <li class="navigation__item">
+                    <button class="navigation__button">
+                        <svg width="24" height="24" class="navigation__icon">
+                            <use href="./img/icons.svg#icon-question"></use>
+                        </svg>
+                        Help
+                        <svg width="16" height="16" class="navigation__arrow">
+                            <use href="./img/icons.svg#icon-arrow-right"></use>
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+
+            <div class="navigation__manager">
+                <img src="./img/navigation/image-1.jpg" alt="manager" class="navigation__image">
+                <div>
+                    <p class="navigation__manager--name">Evano</p>
+                    <p class="navigation__manager--work">Project Manager</p>
+                </div>
+            </div>
+
+        </nav>
+
+        <main>
+            <section class="content">
+                <div class="container">
+                    <div class="mobile__menu">
+                        <h1 class="content__title">Hello Evano 👋🏼,</h1>
+                        <button class="burger__menu--open">
+                            <svg width="30" height="30">
+                                <use href="./img/icons.svg#icon-burger"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="content__table">
+                        <div class="content__top--menu">
+                            <div>
+                                <p class="content__customers">All Customers</p>
+                                <p class="content__members">Active Members</p>
+                            </div>
+                            <form class="content__form">
+                                <button type="submit" class="content__button">
+                                    <svg width="24" height="24">
+                                        <use href="./img/icons.svg#icon-search"></use>
+                                    </svg>
+                                </button>
+                                <input type="text" placeholder="Search" class="content__input">
+                            </form>
+                        </div>
+
+                        <div class="content__table--item">
+                            <table class="table">
+                                <thead class="table__head">
+                                    <tr>
+                                        <th>Customer Name</th>
+                                        <th>Company</th>
+                                        <th>Phone Number</th>
+                                        <th>Email</th>
+                                        <th>Country</th>
+                                        <th class="table__status">Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table__body">
+                                    <tr class="table__row">
+                                        <td class="table__info">Jane Cooper</td>
+                                        <td class="table__info">Microsoft</td>
+                                        <td class="table__info">(225) 555-0118</td>
+                                        <td class="table__info">jane@microsoft.com</td>
+                                        <td class="table__info">United States</td>
+                                        <td class="table__active">Active</td>
+                                    </tr>
+                                    <tr class="table__row">
+                                        <td class="table__info">Floyd Miles</td>
+                                        <td class="table__info">Yahoo</td>
+                                        <td class="table__info">(205) 555-0100</td>
+                                        <td class="table__info">floyd@yahoo.com</td>
+                                        <td class="table__info">Kiribati</td>
+                                        <td class="table__inactive">Inactive</td>
+                                    </tr>
+                                    <tr class="table__row">
+                                        <td class="table__info">Ronald Richards</td>
+                                        <td class="table__info">Adobe</td>
+                                        <td class="table__info">(302) 555-0107</td>
+                                        <td class="table__info">ronald@adobe.com</td>
+                                        <td class="table__info">Israel</td>
+                                        <td class="table__inactive">Inactive</td>
+                                    </tr>
+                                    <tr class="table__row">
+                                        <td class="table__info">Marvin McKinney</td>
+                                        <td class="table__info">Tesla</td>
+                                        <td class="table__info">(252) 555-0126</td>
+                                        <td class="table__info">marvin@tesla.com</td>
+                                        <td class="table__info">Iran</td>
+                                        <td class="table__active">Active</td>
+                                    </tr>
+                                    <tr class="table__row">
+                                        <td class="table__info">Jerome Bell</td>
+                                        <td class="table__info">Google</td>
+                                        <td class="table__info">(629) 555-0129</td>
+                                        <td class="table__info">jerome@google.com</td>
+                                        <td class="table__info">Réunion</td>
+                                        <td class="table__active">Active</td>
+                                    </tr>
+                                    <tr class="table__row">
+                                        <td class="table__info">Kathryn Murphy</td>
+                                        <td class="table__info">Microsoft</td>
+                                        <td class="table__info">(406) 555-0120</td>
+                                        <td class="table__info">kathryn@microsoft.com</td>
+                                        <td class="table__info">Curaçao</td>
+                                        <td class="table__active">Active</td>
+                                    </tr>
+                                    <tr class="table__row">
+                                        <td class="table__info">Jacob Jones</td>
+                                        <td class="table__info">Yahoo</td>
+                                        <td class="table__info">(208) 555-0112</td>
+                                        <td class="table__info">jacob@yahoo.com</td>
+                                        <td class="table__info">Brazil</td>
+                                        <td class="table__active">Active</td>
+                                    </tr>
+                                    <tr class="table__row">
+                                        <td class="table__info">Kristin Watson</td>
+                                        <td class="table__info">Facebook</td>
+                                        <td class="table__info">(704) 555-0127</td>
+                                        <td class="table__info">kristin@facebook.com</td>
+                                        <td class="table__info">Åland Islands</td>
+                                        <td class="table__inactive">Inactive</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="content__bottom--menu">
+                            <p class="content__showing">Showing data 1 to 8 of 256K entries</p>
+                            <ul class="pagination">
+                                <li class="pagination__item"><button class="pagination__button">&#60</button></li>
+                                <li class="pagination__item"><button
+                                        class="pagination__button pagination__button--active">1</button>
+                                </li>
+                                <li class="pagination__item"><button class="pagination__button">2</button></li>
+                                <li class="pagination__item"><button class="pagination__button">3</button></li>
+                                <li class="pagination__item"><button class="pagination__button">4</button></li>
+                                <li class="pagination__item--pages">...</li>
+                                <li class="pagination__item"><button class="pagination__button">40</button></li>
+                                <li class="pagination__item"><button class="pagination__button">&#62</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

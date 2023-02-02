@@ -1,0 +1,85 @@
+.table {
+    width: 888px;
+    margin: 40px auto 0 auto;
+
+    @media screen and (max-width:1280px) {
+        width: 550px;
+    }
+}
+
+.table__head {
+    border-bottom: 1px solid #EEEEEE;
+
+
+    th {
+        font-weight: 500;
+        font-size: 14px;
+        letter-spacing: -0.01em;
+        color: var(--secondary-text-color);
+        text-align: left;
+        padding-bottom: 14px;
+
+
+        @media screen and (max-width:1280px) {
+            font-size: 10px;
+        }
+    }
+}
+
+.table__status {
+    text-align: center !important;
+    width: 80px !important;
+}
+
+.table__row {
+    border-bottom: 1px solid#EEEEEE;
+}
+
+.table__info {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: -0.01em;
+    color: var(--primary-text-color);
+
+    @media screen and (max-width:1280px) {
+        font-size: 10px;
+    }
+}
+
+.table__active {
+    margin: 20px 0;
+    display: inline-block;
+    padding: 4px 18px;
+    background-color: #16C09861;
+    border: 1px solid #00B087;
+    border-radius: 4px;
+    float: right;
+
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: -0.01em;
+    color: var(--active-text-color);
+
+    @media screen and (max-width:1280px) {
+        font-size: 10px;
+    }
+}
+
+.table__inactive {
+    margin: 20px 0;
+    display: inline-block;
+    padding: 4px 12px;
+    float: right;
+    background-color: #FFC5C5;
+    border: 1px solid #DF0404;
+    border-radius: 4px;
+
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: -0.01em;
+    color: var(--inactive-text-color);
+
+    @media screen and (max-width:1280px) {
+        font-size: 10px;
+    }
+}
